@@ -6,5 +6,31 @@
 </head>
 <body>
 
+
+<nav class="navbar navbar-dark bg-dark">
+  <!-- Navbar content -->
+</nav>
+
+
+<div class="container">
+    <div class="row">
+<div class="jumbotron">
+  <h1 class="display-3">ようこそ。待ち時間アプリへ</h1>
+  <p class="lead"></p>
+  <hr class="my-2">
+  <p>ランドかシーどちらかを選択</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="{% url 'scrape:land' %}" role="button">ランドへ</a>
+      <a class="btn btn-success btn-lg" href="{% url 'scrape:sea' %}" role="button">シーへ</a>
+  </p>
+</div>
+    </div></div>
+
 </body>
 </html>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+<!--JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src=

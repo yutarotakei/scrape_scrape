@@ -4,7 +4,36 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+
 <body>
+
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#!">Yutaro</a>
+</nav>
+
+
+<div class="container">
+<ul class="list-group list-group-flush">
+ <table class='table table-striped' border="2">
+   <tr>
+     <th>アトラクション</th>
+     <th>待ち時間</th>
+   </tr>
+{% for fsname in templist %}
+   <tr>
+     <td>{{ fsname.attraction }}</td>
+     <td>{{ fsname.wait_time }}</a></td>
+   </tr>
+   {% endfor %}
+ </table>
+</ul>
+</div>
 
 </body>
 </html>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+<!--JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
